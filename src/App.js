@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+
+// COMPONENTS
+import Header from './components/Layout/Header';
+import Summary from './components/Layout/Summary';
+import Meals from './components/Meals/Meals';
+import Cart from './components/Cart/Cart';
+
+// CONTEXTS
+import { CartContextProvider } from './context/CartContext';
+import { MealsContextProvider } from './context/MealsContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <CartContextProvider>
+        <Header />
+        <Cart />
+        <Summary />
+        <MealsContextProvider>
+          <Meals />
+        </MealsContextProvider>
+      </CartContextProvider>
+    </Fragment>
   );
 }
 

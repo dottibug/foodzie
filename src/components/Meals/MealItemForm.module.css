@@ -1,0 +1,41 @@
+.meal-form {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.meal-form button {
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f4a261;
+  border: 1px solid #f4a261;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.meal-form button:hover,
+.meal-form button:active {
+  background-color: #e76f51;
+  border-color: #e76f51;
+}
+
+/* /////////////////////////////////// */
+/* TODO Delete this styling one forward ref is set up  */
+.meal-form input {
+  width: 4rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.meal-form label {
+  font-weight: bold;
+  margin-right: 1rem;
+}

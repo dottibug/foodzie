@@ -1,0 +1,38 @@
+.meal {
+  display: grid;
+  grid-template-areas: 'info form';
+  margin: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.meal-info {
+  display: flex;
+  flex-direction: column;
+  grid-area: info;
+  justify-content: space-between;
+}
+
+.meal h3 {
+  margin: 0 0 0.25rem 0;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: #e76f51;
+  font-size: 1.25rem;
+}
+
+.meal-form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: center;
+}
